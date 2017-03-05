@@ -1,0 +1,4 @@
+SELECT ser.clientID
+FROM (select distinct clientID, regionID from another_tasks_4.services) as ser
+GROUP BY ser.clientid
+having count(ser.clientID)=1

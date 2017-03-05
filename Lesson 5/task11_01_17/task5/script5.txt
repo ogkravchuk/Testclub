@@ -1,0 +1,6 @@
+SELECT dept.deptname, count(emp.empid)
+FROM task_3.`emp a`as emp
+join task_3.`dept b`as dept
+on emp.deptid=dept.deptid
+group by dept.deptname
+order by count(emp.empid)

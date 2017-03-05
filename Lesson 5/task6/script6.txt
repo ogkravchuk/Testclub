@@ -1,0 +1,3 @@
+SELECT emp.empname, 
+(select emp.empname where emp.empid in(emp.mgrid)) as 'manager_name'
+FROM task_3.`emp a`as emp

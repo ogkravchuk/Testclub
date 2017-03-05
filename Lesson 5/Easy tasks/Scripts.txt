@@ -1,0 +1,18 @@
+Spain and England
+
+select pi.Name, pi.Surname, ci.CountryName, ci.CityName, pi.isOccupied
+from peopleinfo AS pi
+join countryinfo AS ci
+ON pi.city_id=ci.city_id
+where ci.CountryName in ('England','Spain') AND ci.IsCapital=1 AND pi.isOccupied=0
+
+
+Ukraine and Poland
+
+select count(pi.Name)
+from peopleinfo AS pi
+join countryinfo AS ci
+ON pi.city_id=ci.city_id
+where ci.CountryName in ('Ukraine','Poland') AND ci.IsCapital=0 AND pi.isOccupied=1 
+and ci.Population between 10000 and 50000 or ci.Population between 500000 and 1000000
+

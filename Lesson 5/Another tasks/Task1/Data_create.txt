@@ -1,0 +1,16 @@
+INSERT INTO `another_tasks`.`customers` (`CustomersID`, `Name`, `Age`, `CountryID`) VALUES ('1', 'Bruce Lee', '100', '5');
+INSERT INTO `another_tasks`.`customers` (`CustomersID`, `Name`, `Age`, `CountryID`) VALUES ('2', 'Bruce Willis', '50', '37');
+INSERT INTO `another_tasks`.`customers` (`CustomersID`, `Name`, `Age`, `CountryID`) VALUES ('3', 'Anthony Hopkins', '70', '1');
+INSERT INTO `another_tasks`.`customers` (`CustomersID`, `Name`, `Age`, `CountryID`) VALUES ('4', 'Vinnie Jones', '50', '15');
+
+
+INSERT INTO `another_tasks`.`orders` (`OrderID`, `CustomersID`, `Status`, `Price`) VALUES ('999', '2', 'Complete', '100');
+INSERT INTO `another_tasks`.`orders` (`OrderID`, `CustomersID`, `Status`, `Price`) VALUES ('1000', '3', 'In progress', '200');
+INSERT INTO `another_tasks`.`orders` (`OrderID`, `CustomersID`, `Status`, `Price`) VALUES ('1001', '4', 'Open', '50');
+INSERT INTO `another_tasks`.`orders` (`OrderID`, `CustomersID`, `Status`, `Price`) VALUES ('1002', '1', 'Complete', '300');
+
+
+INSERT INTO `another_tasks`.`country` (`ID`, `Name`) VALUES ('1', 'Ukraine');
+INSERT INTO `another_tasks`.`country` (`ID`, `Name`) VALUES ('5', 'USA');
+INSERT INTO `another_tasks`.`country` (`ID`, `Name`) VALUES ('15', 'Spain');
+INSERT INTO `another_tasks`.`country` (`ID`, `Name`) VALUES ('37', 'UK');

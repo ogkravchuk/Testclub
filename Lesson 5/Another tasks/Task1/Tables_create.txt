@@ -1,0 +1,22 @@
+CREATE TABLE `another_tasks`.`customers` (
+  `CustomersID` INT NOT NULL,
+  `Name` VARCHAR(45) NULL,
+  `Age` VARCHAR(45) NULL,
+  `CountryID` INT NULL,
+  PRIMARY KEY (`CustomersID`));
+  
+ CREATE TABLE `another_tasks`.`orders` (
+  `OrderID` INT NOT NULL,
+  `CustomersID` INT NULL,
+  `Status` VARCHAR(45) NULL,
+  `Price` INT NULL,
+  PRIMARY KEY (`OrderID`));
+
+
+CREATE TABLE `another_tasks`.`country` (
+  `ID` INT NOT NULL,
+  `Name` VARCHAR(45) NULL,
+  PRIMARY KEY (`ID`));
+  
+  
+  

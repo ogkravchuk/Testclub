@@ -1,0 +1,167 @@
+package com.example.tests;
+
+import java.util.regex.Pattern;
+import java.util.concurrent.TimeUnit;
+import org.junit.*;
+import static org.junit.Assert.*;
+import static org.hamcrest.CoreMatchers.*;
+import org.openqa.selenium.*;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.Select;
+
+public class 7 {
+  private WebDriver driver;
+  private String baseUrl;
+  private boolean acceptNextAlert = true;
+  private StringBuffer verificationErrors = new StringBuffer();
+
+  @Before
+  public void setUp() throws Exception {
+    driver = new FirefoxDriver();
+    baseUrl = "https://app.leantesting.com/";
+    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+  }
+
+  @Test
+  public void test7() throws Exception {
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://app.leantesting.com/" />
+<title>7</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">7</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/en/sign-in</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=UserForm_username</td>
+	<td>ogkravchuk</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=UserForm_password</td>
+	<td>Lbyfvjrbtd1927</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//button[@type='submit']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.arrow-down</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=ul.dropdown-menu &gt; li &gt; a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Profile</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.seamless-blank</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=User_firstname</td>
+	<td>Oleksii</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.seamless-blank</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=User_lastname</td>
+	<td>Kravchuk</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.seamless-blank</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=User_city</td>
+	<td>Kiev</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.seamless-blank</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=User_country_id</td>
+	<td>label=Ukraine</td>
+</tr>
+
+</tbody></table>
+</body>
+</html>
+  }
+
+  @After
+  public void tearDown() throws Exception {
+    driver.quit();
+    String verificationErrorString = verificationErrors.toString();
+    if (!"".equals(verificationErrorString)) {
+      fail(verificationErrorString);
+    }
+  }
+
+  private boolean isElementPresent(By by) {
+    try {
+      driver.findElement(by);
+      return true;
+    } catch (NoSuchElementException e) {
+      return false;
+    }
+  }
+
+  private boolean isAlertPresent() {
+    try {
+      driver.switchTo().alert();
+      return true;
+    } catch (NoAlertPresentException e) {
+      return false;
+    }
+  }
+
+  private String closeAlertAndGetItsText() {
+    try {
+      Alert alert = driver.switchTo().alert();
+      String alertText = alert.getText();
+      if (acceptNextAlert) {
+        alert.accept();
+      } else {
+        alert.dismiss();
+      }
+      return alertText;
+    } finally {
+      acceptNextAlert = true;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+  SELECT e.employeeName, count(departmentNo) FROM Employee e 
+  INNER JOIN Department d ON e.employeeName=d.employeeName 
+  GROUP BY e.employeeName 
+  HAVING COUNT(departmentNo)>2rom task_3.`emp a` on emp.mgrid=emp.empid) as 'Manager name'
+FROM task_3.`emp a`as emp
+join task_3.`dept b`as dept
+on emp.deptid=dept.deptid
+group by dept.deptname
+order by count(emp.empid)
+
+
+http://www.mysql.ru/docs/man/ANSI_diff_Sub-selects.html
+
+SELECT dt, product_id, title, amount, price
+FROM m_income INNER JOIN m_product 
+ON m_income.product_id=m_product.id;
+
+
+
+
+
+select employee, managerid
+from your_table
+where managerid is null 
+or managerid = id

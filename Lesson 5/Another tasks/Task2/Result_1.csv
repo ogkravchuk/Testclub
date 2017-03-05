@@ -1,0 +1,10 @@
+Instrumentcode,ratingvalue,RatingAgencyName,RatingTypeCode
+101929023,(P)Ba2,Moody's,LT
+103530745,Baa1,Moody's,LT
+103530745,Baa2,Moody's,LT
+106662608,(P)B2,Moody's,LT
+106662608,(P)B3,Moody's,LT
+107783527,AA-,"Barclays Internal",LT
+111674711,"B+ f","Standard & Poor's",RU
+114313533,"BB f","Standard & Poor's",RU
+114313533,"BBB- f","Standard & Poor's",RU

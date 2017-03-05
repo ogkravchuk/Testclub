@@ -1,0 +1,27 @@
+1)	Select customers with name Bruce
+
+SELECT * 
+FROM another_tasks.customers
+where Name Like 'Bruce%'
+
+2)	Show the total price of all orders with the same status
+
+SELECT Status, SUM(Price)
+FROM another_tasks.orders
+group by Status
+
+3)	Select all customer names with statuses of their orders (customers is a main table)
+
+SELECT Name, Status 
+FROM another_tasks.customers as cs
+join another_tasks.orders as ord
+on cs.CustomersID=ord.CustomersID
+
+4)	Select all customers names with their orderIds and name of the country
+
+SELECT cs.Name, ord.orderID, co.Name
+FROM another_tasks.customers as cs
+join another_tasks.orders as ord
+join another_tasks.country as co
+on cs.CustomersID=ord.CustomersID
+and cs.CountryID=co.ID

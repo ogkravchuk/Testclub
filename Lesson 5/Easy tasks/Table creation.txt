@@ -1,0 +1,18 @@
+CREATE TABLE `task_1`.`countryinfo` (
+  `city_id` INT NOT NULL,
+  `CountryName` VARCHAR(45) NULL,
+  `CityName` VARCHAR(45) NULL,
+  `Population` INT NULL,
+  `IsCapital` VARCHAR(45) NULL,
+  PRIMARY KEY (`city_id`));
+  
+  
+  
+  
+  CREATE TABLE `task_1`.`peopleinfo` (
+  `id` INT NOT NULL,
+  `Name` VARCHAR(45) NULL,
+  `Surname` VARCHAR(45) NULL,
+  `city_id` INT NULL,
+  `isOccupied` INT NULL,
+  PRIMARY KEY (`id`));

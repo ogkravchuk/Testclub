@@ -1,0 +1,2 @@
+deptname,count(emp.empid)
+QA,4

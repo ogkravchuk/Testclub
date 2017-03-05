@@ -1,0 +1,11 @@
+Task description:On diagram you see relationships between tables. 
+Please write SQL query to retrieve aggregate table displayed below.
+
+SELECT iir.Instrumentcode, ra.ratingvalue, ray.RatingAgencyName, rt.RatingTypeCode  
+FROM another_tasks_2.`instrument(instrumentreference)` as iir
+join another_tasks_2.rating as RA
+join another_tasks_2.ratingagency as RAY
+join another_tasks_2.ratingtype as RT
+on iir.reportingcontextID=ra.reportingcontextID
+and iir.reportingcontextID=ray.reportingcontextID
+and iir.reportingcontextID=rt.roprtingcontextID

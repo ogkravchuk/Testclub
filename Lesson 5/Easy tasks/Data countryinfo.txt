@@ -1,0 +1,122 @@
+
+
+
+INSERT INTO `task_1`.`countryinfo` 
+(`city_id`, `CountryName`, `CityName`, `Population`, `IsCapital`)
+VALUES ('1', 'England', 'London', '867400', '1');
+
+INSERT INTO `task_1`.`countryinfo` 
+(`city_id`, `CountryName`, `CityName`, `Population`, `IsCapital`)
+VALUES ('2', 'Spain', 'Madrid', '3165000', '1');
+
+INSERT INTO `task_1`.`countryinfo` 
+(`city_id`, `CountryName`, `CityName`, `Population`, `IsCapital`)
+VALUES ('3', 'Poland', 'Drum', '123434', '0');
+
+INSERT INTO `task_1`.`countryinfo` 
+(`city_id`, `CountryName`, `CityName`, `Population`, `IsCapital`)
+VALUES ('4', 'Poland', 'Confidence', '867400', '0');
+
+INSERT INTO `task_1`.`countryinfo` 
+(`city_id`, `CountryName`, `CityName`, `Population`, `IsCapital`)
+VALUES ('5', 'Spain', 'Cuba', '3165000', '0');
+
+INSERT INTO `task_1`.`countryinfo` 
+(`city_id`, `CountryName`, `CityName`, `Population`, `IsCapital`)
+VALUES ('6', 'Ukraine', 'Drum', '123434', '0');
+
+INSERT INTO `task_1`.`countryinfo` 
+(`city_id`, `CountryName`, `CityName`, `Population`, `IsCapital`)
+VALUES ('7', 'Ukraine', 'Twitty', '82342340', '0');
+
+INSERT INTO `task_1`.`countryinfo` 
+(`city_id`, `CountryName`, `CityName`, `Population`, `IsCapital`)
+VALUES ('8', 'Spain', 'Nacogdoches', '3222234', '0');
+
+INSERT INTO `task_1`.`countryinfo` 
+(`city_id`, `CountryName`, `CityName`, `Population`, `IsCapital`)
+VALUES ('9', 'Poland', 'Los Angeles', '234324', '0');
+
+INSERT INTO `task_1`.`countryinfo` 
+(`city_id`, `CountryName`, `CityName`, `Population`, `IsCapital`)
+VALUES ('10', 'Poland', 'Kokomo', '823454', '0');
+
+INSERT INTO `task_1`.`countryinfo` 
+(`city_id`, `CountryName`, `CityName`, `Population`, `IsCapital`)
+VALUES ('11', 'Ukraine', 'Knife River', '786542', '0');
+
+INSERT INTO `task_1`.`countryinfo` 
+(`city_id`, `CountryName`, `CityName`, `Population`, `IsCapital`)
+VALUES ('12', 'Ukraine', 'Four Town', '7525554', '0');
+
+INSERT INTO `task_1`.`countryinfo` 
+(`city_id`, `CountryName`, `CityName`, `Population`, `IsCapital`)
+VALUES ('13', 'England', 'Tupawek', '75352455', '0');
+
+INSERT INTO `task_1`.`countryinfo` 
+(`city_id`, `CountryName`, `CityName`, `Population`, `IsCapital`)
+VALUES ('14', 'Spain', 'Stamping Ground', '35250', '0');
+
+INSERT INTO `task_1`.`countryinfo` 
+(`city_id`, `CountryName`, `CityName`, `Population`, `IsCapital`)
+VALUES ('15', 'Ukraine', 'Shamrock', '84544', '0');
+
+INSERT INTO `task_1`.`countryinfo` 
+(`city_id`, `CountryName`, `CityName`, `Population`, `IsCapital`)
+VALUES ('16', 'Poland', 'Quicksand', '77775', '0');
+
+INSERT INTO `task_1`.`countryinfo` 
+(`city_id`, `CountryName`, `CityName`, `Population`, `IsCapital`)
+VALUES ('17', 'Poland', 'Habit', '66666', '0');
+
+INSERT INTO `task_1`.`countryinfo` 
+(`city_id`, `CountryName`, `CityName`, `Population`, `IsCapital`)
+VALUES ('18', 'Poland', 'Decoy', '8888888', '0');
+
+INSERT INTO `task_1`.`countryinfo` 
+(`city_id`, `CountryName`, `CityName`, `Population`, `IsCapital`)
+VALUES ('19', 'Poland', 'Beauty', '78789530', '0');
+
+INSERT INTO `task_1`.`countryinfo` 
+(`city_id`, `CountryName`, `CityName`, `Population`, `IsCapital`)
+VALUES ('20', 'Ukraine', 'Swamp Angel', '3123454', '0');
+
+INSERT INTO `task_1`.`countryinfo` 
+(`city_id`, `CountryName`, `CityName`, `Population`, `IsCapital`)
+VALUES ('21', 'England', 'Chimney Rock', '8245452', '0');
+
+INSERT INTO `task_1`.`countryinfo` 
+(`city_id`, `CountryName`, `CityName`, `Population`, `IsCapital`)
+VALUES ('22', 'Poland', 'Plush', '83256', '0');
+
+INSERT INTO `task_1`.`countryinfo` 
+(`city_id`, `CountryName`, `CityName`, `Population`, `IsCapital`)
+VALUES ('23', 'Spain', 'Lookingglass', '66151', '0');
+
+INSERT INTO `task_1`.`countryinfo` 
+(`city_id`, `CountryName`, `CityName`, `Population`, `IsCapital`)
+VALUES ('24', 'Ukraine', 'Volcanoville', '6565651', '0');
+
+INSERT INTO `task_1`.`countryinfo` 
+(`city_id`, `CountryName`, `CityName`, `Population`, `IsCapital`)
+VALUES ('25', 'Ukraine', 'Hicksville', '95351', '0');
+
+INSERT INTO `task_1`.`countryinfo` 
+(`city_id`, `CountryName`, `CityName`, `Population`, `IsCapital`)
+VALUES ('26', 'Spain', 'Peewee', '32665', '0');
+
+INSERT INTO `task_1`.`countryinfo` 
+(`city_id`, `CountryName`, `CityName`, `Population`, `IsCapital`)
+VALUES ('27', 'Poland', 'Aquashicola', '76568', '0');
+
+INSERT INTO `task_1`.`countryinfo` 
+(`city_id`, `CountryName`, `CityName`, `Population`, `IsCapital`)
+VALUES ('28', 'Ukraine', 'Candy Town', '99523', '0');
+
+INSERT INTO `task_1`.`countryinfo` 
+(`city_id`, `CountryName`, `CityName`, `Population`, `IsCapital`)
+VALUES ('29', 'Poland', 'Warsaw', '5621321', '1');
+
+INSERT INTO `task_1`.`countryinfo` 
+(`city_id`, `CountryName`, `CityName`, `Population`, `IsCapital`)
+VALUES ('30', 'Ukraine', 'Kyiv', '96347963', '1');

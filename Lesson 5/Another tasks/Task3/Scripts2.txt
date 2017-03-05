@@ -1,0 +1,6 @@
+SELECT pr.name
+FROM another_tasks_3.project as PR
+join another_tasks_3.empl as EMPL
+join another_tasks_3.assign as ASS
+where pr.P_id=ASS.p_id and ASS.e_id=EMPL.eid and EMPL.salary<1000
+group by pr.name

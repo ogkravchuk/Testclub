@@ -1,0 +1,5 @@
+SELECT emp.empname, emp.dob, dept.deptname
+FROM task_3.`emp a`as emp
+join task_3.`dept b` as dept
+on emp.deptid=dept.deptid
+ORDER BY EMP.empname	

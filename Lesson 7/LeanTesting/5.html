@@ -1,0 +1,212 @@
+package com.example.tests;
+
+import java.util.regex.Pattern;
+import java.util.concurrent.TimeUnit;
+import org.junit.*;
+import static org.junit.Assert.*;
+import static org.hamcrest.CoreMatchers.*;
+import org.openqa.selenium.*;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.Select;
+
+public class 5 {
+  private WebDriver driver;
+  private String baseUrl;
+  private boolean acceptNextAlert = true;
+  private StringBuffer verificationErrors = new StringBuffer();
+
+  @Before
+  public void setUp() throws Exception {
+    driver = new FirefoxDriver();
+    baseUrl = "https://app.leantesting.com/";
+    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+  }
+
+  @Test
+  public void test5() throws Exception {
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://app.leantesting.com/" />
+<title>5</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">5</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/en/sign-in</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=UserForm_username</td>
+	<td>ogkravchuk</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=UserForm_password</td>
+	<td>Lbyfvjrbtd1927</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//button[@type='submit']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Project_name</td>
+	<td>Leantesting</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@type='submit']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Version_version_number</td>
+	<td>New</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@type='submit'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=ProjectSection_name</td>
+	<td>Automate</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@type='button'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Finish</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=div.sprite-sidebar.sprite-sidebar-bug</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.btn-report-empty</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=ReportBugFormModal_title</td>
+	<td>Not send email.</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=ReportBugFormModal_assigned_to_id</td>
+	<td>label=ogkravchuk</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=ReportBugFormModal_severity</td>
+	<td>label=Critical</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=ReportBugFormModal_bug_types_id</td>
+	<td>label=Functional</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=ReportBugFormModal_reproducibility</td>
+	<td>label=Always</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=ReportBugFormModal_description</td>
+	<td>Not send email for registration.</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=ReportBugFormModal_expected_results</td>
+	<td>ER:email send.<br />AR:email not send.</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=bug_steps</td>
+	<td>go to leantesting</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=bug_steps</td>
+	<td>try to registration.</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@type='submit'])[3]</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>
+  }
+
+  @After
+  public void tearDown() throws Exception {
+    driver.quit();
+    String verificationErrorString = verificationErrors.toString();
+    if (!"".equals(verificationErrorString)) {
+      fail(verificationErrorString);
+    }
+  }
+
+  private boolean isElementPresent(By by) {
+    try {
+      driver.findElement(by);
+      return true;
+    } catch (NoSuchElementException e) {
+      return false;
+    }
+  }
+
+  private boolean isAlertPresent() {
+    try {
+      driver.switchTo().alert();
+      return true;
+    } catch (NoAlertPresentException e) {
+      return false;
+    }
+  }
+
+  private String closeAlertAndGetItsText() {
+    try {
+      Alert alert = driver.switchTo().alert();
+      String alertText = alert.getText();
+      if (acceptNextAlert) {
+        alert.accept();
+      } else {
+        alert.dismiss();
+      }
+      return alertText;
+    } finally {
+      acceptNextAlert = true;
+    }
+  }
+}

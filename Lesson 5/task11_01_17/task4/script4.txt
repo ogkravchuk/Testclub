@@ -1,0 +1,5 @@
+SELECT emp.empname, dept.deptname, (year(curdate())-year(emp.dob)) as 'age'
+FROM task_3.`emp a` as emp
+join task_3.`dept b`as dept
+on emp.deptid=dept.deptid
+ORDER BY 'age' desc
